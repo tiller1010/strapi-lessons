@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "levels",
+  "info": {
+    "name": "Levels",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Level": {
+      "type": "string"
+    },
+    "topics": {
+      "collection": "topics",
+      "via": "levels",
+      "dominant": true
+    }
+  }
+}
