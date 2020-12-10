@@ -19,6 +19,17 @@
     },
     "Content": {
       "type": "richtext"
+    },
+    "FeaturedMedia": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files",
+        "images",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
     }
   }
 }
