@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "topics",
   "info": {
-    "name": "Topics"
+    "name": "Topics",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -14,8 +15,17 @@
       "type": "string"
     },
     "levels": {
-      "via": "topics",
-      "collection": "levels"
+      "collection": "levels",
+      "via": "topics"
+    },
+    "FeaturedImage": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
     }
   }
 }
