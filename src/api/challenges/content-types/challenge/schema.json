@@ -3,6 +3,9 @@
   "collectionName": "challenges",
   "info": {
     "name": "Challenges",
+    "displayName": "Challenge",
+    "singularName": "challenge",
+    "pluralName": "challenges",
     "description": ""
   },
   "options": {

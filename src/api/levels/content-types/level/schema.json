@@ -3,6 +3,9 @@
   "collectionName": "levels",
   "info": {
     "name": "Levels",
+    "displayName": "Level",
+    "singularName": "level",
+    "pluralName": "levels",
     "description": ""
   },
   "options": {

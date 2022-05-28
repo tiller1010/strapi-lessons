@@ -3,6 +3,9 @@
   "collectionName": "topics",
   "info": {
     "name": "Topics",
+    "displayName": "Topic",
+    "singularName": "topic",
+    "pluralName": "topics",
     "description": ""
   },
   "options": {
