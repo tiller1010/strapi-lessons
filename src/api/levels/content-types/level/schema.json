@@ -18,9 +18,9 @@
       "type": "string"
     },
     "topics": {
-      "via": "levels",
-      "collection": "topics",
-      "dominant": true
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::topics.topic"
     }
   }
 }

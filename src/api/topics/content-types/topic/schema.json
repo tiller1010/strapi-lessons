@@ -17,18 +17,25 @@
     "Topic": {
       "type": "string"
     },
-    "levels": {
-      "collection": "levels",
-      "via": "topics"
+    "challenges": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::challenges.challenge"
+    },
+    "level": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::levels.level"
     },
     "FeaturedImage": {
-      "model": "file",
-      "via": "related",
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
-        "images"
-      ],
-      "plugin": "upload",
-      "required": false
+        "images",
+        "files",
+        "videos"
+      ]
     }
   }
 }

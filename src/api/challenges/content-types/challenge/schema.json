@@ -17,22 +17,22 @@
     "Title": {
       "type": "string"
     },
-    "topic": {
-      "model": "topics"
-    },
     "Content": {
       "type": "richtext"
     },
+    "topic": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::topics.topic"
+    },
     "FeaturedMedia": {
-      "collection": "file",
-      "via": "related",
       "allowedTypes": [
-        "files",
         "images",
+        "files",
         "videos"
       ],
-      "plugin": "upload",
-      "required": false
+      "type": "media",
+      "multiple": false
     }
   }
 }
