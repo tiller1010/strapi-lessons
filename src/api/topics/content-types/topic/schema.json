@@ -17,16 +17,6 @@
     "Topic": {
       "type": "string"
     },
-    "challenges": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::challenges.challenge"
-    },
-    "level": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::levels.level"
-    },
     "FeaturedImage": {
       "type": "media",
       "multiple": false,
@@ -36,6 +26,16 @@
         "files",
         "videos"
       ]
+    },
+    "level": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::levels.level"
+    },
+    "challenges": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::challenges.challenge"
     }
   }
 }
