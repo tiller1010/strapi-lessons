@@ -17,7 +17,7 @@
     "Topic": {
       "type": "string"
     },
-    "FeaturedImage": {
+    "FeaturedMedia": {
       "type": "media",
       "multiple": false,
       "required": false,

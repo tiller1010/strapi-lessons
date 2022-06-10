@@ -1,31 +1,15 @@
-'use strict';
+// path: ./config/plugins.js
 
-module.exports = () => ({
-  // graphql: {
-  //   enabled: true,
-  //   config: {
-  //     endpoint: '/graphql',
-
-  //     defaultLimit: 25,
-  //     maxLimit: 100,
-
-  //     apolloServer: {
-  //       tracing: true,
-  //     },
-  //   },
-  // },
-  // documentation: {
-  //   config: {
-  //     info: {
-  //       version: '2.0.0',
-  //     },
-  //   },
-  // },
-  // myplugin: {
-  //   enabled: true,
-  //   resolve: `./src/plugins/myplugin`, // From the root of the project
-  //   config: {
-  //     testConf: 3,
-  //   },
-  // },
+module.exports = ({ env }) => ({
+  upload: {
+    config: {
+      breakpoints: {
+        xlarge: 1920,
+        large: 1000,
+        medium: 750,
+        small: 500,
+        xsmall: 64
+      },
+    },
+  },
 });
