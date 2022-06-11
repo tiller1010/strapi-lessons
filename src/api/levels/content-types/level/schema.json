@@ -20,7 +20,8 @@
     "topics": {
       "type": "relation",
       "relation": "oneToMany",
-      "target": "api::topics.topic"
+      "target": "api::topics.topic",
+      "mappedBy": "level"
     }
   }
 }

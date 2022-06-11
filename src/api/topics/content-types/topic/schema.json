@@ -29,13 +29,15 @@
     },
     "level": {
       "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::levels.level"
+      "relation": "manyToOne",
+      "target": "api::levels.level",
+      "inversedBy": "topics"
     },
     "challenges": {
       "type": "relation",
       "relation": "oneToMany",
-      "target": "api::challenges.challenge"
+      "target": "api::challenges.challenge",
+      "mappedBy": "topic"
     }
   }
 }
