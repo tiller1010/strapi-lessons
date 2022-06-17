@@ -1,15 +1,10 @@
 module.exports = ({ env }) => ({
-  defaultConnection: 'default',
-  connections: {
-    default: {
-      connector: 'bookshelf',
-      settings: {
-        client: 'sqlite',
+  connection: {
+    connector: 'bookshelf',
+      client: 'sqlite',
+      connection: {
         filename: env('DATABASE_FILENAME', '.tmp/data.db'),
       },
-      options: {
-        useNullAsDefault: true,
-      },
-    },
+      useNullAsDefault: true,
   },
 });

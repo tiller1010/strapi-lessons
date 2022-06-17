@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "levels",
+  "info": {
+    "name": "Levels",
+    "displayName": "Level",
+    "singularName": "level",
+    "pluralName": "levels",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Level": {
+      "type": "string"
+    },
+    "topics": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::topics.topic",
+      "mappedBy": "level"
+    }
+  }
+}

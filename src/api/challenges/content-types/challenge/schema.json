@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "challenges",
+  "info": {
+    "name": "Challenges",
+    "displayName": "Challenge",
+    "singularName": "challenge",
+    "pluralName": "challenges",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Content": {
+      "type": "richtext"
+    },
+    "topic": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::topics.topic",
+      "inversedBy": "challenges"
+    },
+    "FeaturedMedia": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  }
+}
